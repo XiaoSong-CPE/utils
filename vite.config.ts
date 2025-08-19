@@ -14,5 +14,6 @@ export default defineConfig({
       fileName: "main",
       formats: ["es"],
     },
+    sourcemap: true,
   },
 });
