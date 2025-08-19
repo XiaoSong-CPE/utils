@@ -21,7 +21,6 @@ jobs:
       - name: Build library
         run: bun run build
 
-      - name: Publish to npm
-        run: |
-          bunx npm config set '//registry.npmjs.org/:_authToken' "${{ secrets.NPM_TOKEN }}"
-          bun publish --access public
+      - uses: JS-DevTools/npm-publish@v3
+        with:
+          token: ${{ secrets.NPM_TOKEN }}

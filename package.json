@@ -1,7 +1,7 @@
 {
   "name": "@karsten_zhou/utils",
   "private": false,
-  "version": "0.1.1",
+  "version": "0.2.0",
   "type": "module",
   "files": [
     "dist"
@@ -19,10 +19,15 @@
   },
   "devDependencies": {
     "@types/node": "^24.1.0",
+    "types-mediawiki": "^1.10.1",
     "typescript": "~5.8.3",
     "vite": "^7.0.4"
   },
   "dependencies": {
+    "@formatjs/intl-localematcher": "^0.6.1",
+    "@monaco-editor/loader": "^1.5.0",
+    "monaco-wiki": "^1.15.0",
+    "shiki": "^3.10.0",
     "vite-plugin-dts": "^4.5.4"
   }
 }
