@@ -2,6 +2,7 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
+import { visualizer } from "rollup-plugin-visualizer";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -15,5 +16,8 @@ export default defineConfig({
       formats: ["es"],
     },
     sourcemap: true,
+    rollupOptions: {
+      plugins: [visualizer({ filename: "./dist/stats.html" })],
+    },
   },
 });

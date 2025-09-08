@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@types/node": "^24.1.0",
+    "rollup-plugin-visualizer": "^6.0.3",
     "types-mediawiki": "^1.10.1",
     "typescript": "~5.8.3",
     "vite": "^7.0.4"
